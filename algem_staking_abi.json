@@ -1,0 +1,894 @@
+[
+  { "type": "constructor", "inputs": [] },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "address", "name": "", "internalType": "contract DappsStaking" }
+    ],
+    "name": "DAPPS_STAKING",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bytes32", "name": "", "internalType": "bytes32" }],
+    "name": "DEFAULT_ADMIN_ROLE",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "string", "name": "", "internalType": "string" }],
+    "name": "DNTname",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint8", "name": "", "internalType": "uint8" }],
+    "name": "FEE_PRECISION",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint8", "name": "", "internalType": "uint8" }],
+    "name": "MANAGEMENT_FEE",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bytes32", "name": "", "internalType": "bytes32" }],
+    "name": "MANAGER",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint8", "name": "", "internalType": "uint8" }],
+    "name": "REVENUE_FEE",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint8", "name": "", "internalType": "uint8" }],
+    "name": "UNSTAKING_FEE",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "addPartner",
+    "inputs": [
+      { "type": "address", "name": "_partner", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "addStaker",
+    "inputs": [
+      { "type": "address", "name": "_addr", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "addToBuffer",
+    "inputs": [
+      { "type": "address", "name": "_user", "internalType": "address" },
+      { "type": "uint256", "name": "_amount", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "buffer",
+    "inputs": [
+      { "type": "address", "name": "", "internalType": "address" },
+      { "type": "uint256", "name": "", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "claim",
+    "inputs": [
+      { "type": "uint256", "name": "_amount", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "claimRewards",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "claimingTxLimit",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "currentEra",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "address", "name": "", "internalType": "contract NDistributor" }
+    ],
+    "name": "distr",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+    "name": "dntToken",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "bool", "name": "done", "internalType": "bool" },
+      { "type": "uint256", "name": "val", "internalType": "uint256" }
+    ],
+    "name": "eraRevenue",
+    "inputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "eraRewards",
+    "inputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "eraShot",
+    "inputs": [
+      { "type": "address", "name": "_user", "internalType": "address" },
+      { "type": "string", "name": "_util", "internalType": "string" },
+      { "type": "string", "name": "_dnt", "internalType": "string" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "eraShotsLimit",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "bool", "name": "done", "internalType": "bool" },
+      { "type": "uint256", "name": "val", "internalType": "uint256" }
+    ],
+    "name": "eraStakerReward",
+    "inputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "bool", "name": "done", "internalType": "bool" },
+      { "type": "uint256", "name": "val", "internalType": "uint256" }
+    ],
+    "name": "eraUnstaked",
+    "inputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "fillRewardPool",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "fillUnbonded",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "fillUnstaking",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "address[]", "name": "", "internalType": "address[]" }
+    ],
+    "name": "getPartners",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bytes32", "name": "", "internalType": "bytes32" }],
+    "name": "getRoleAdmin",
+    "inputs": [{ "type": "bytes32", "name": "role", "internalType": "bytes32" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "address[]", "name": "", "internalType": "address[]" }
+    ],
+    "name": "getStakers",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "uint256", "name": "amount", "internalType": "uint256" }
+    ],
+    "name": "getUserLpTokens",
+    "inputs": [
+      { "type": "address", "name": "_user", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "getUserRewards",
+    "inputs": [
+      { "type": "address", "name": "_user", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      {
+        "type": "tuple[]",
+        "name": "",
+        "internalType": "struct LiquidStaking.Withdrawal[]",
+        "components": [
+          { "type": "uint256" },
+          { "type": "uint256" },
+          { "type": "uint256" }
+        ]
+      }
+    ],
+    "name": "getUserWithdrawals",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "grantRole",
+    "inputs": [
+      { "type": "bytes32", "name": "role", "internalType": "bytes32" },
+      { "type": "address", "name": "account", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+    "name": "hasRole",
+    "inputs": [
+      { "type": "bytes32", "name": "role", "internalType": "bytes32" },
+      { "type": "address", "name": "account", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "initialize",
+    "inputs": [
+      { "type": "string", "name": "_DNTname", "internalType": "string" },
+      { "type": "string", "name": "_utilName", "internalType": "string" },
+      { "type": "address", "name": "_distrAddr", "internalType": "address" },
+      { "type": "address", "name": "_dntToken", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "initialize2",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+    "name": "isLpToken",
+    "inputs": [{ "type": "address", "name": "", "internalType": "address" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+    "name": "isPartner",
+    "inputs": [{ "type": "address", "name": "", "internalType": "address" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+    "name": "isStaker",
+    "inputs": [{ "type": "address", "name": "", "internalType": "address" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+    "name": "isUnstakes",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "lastClaimed",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "lastStaked",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "lastUnstaked",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "lastUpdated",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+    "name": "lpHandlers",
+    "inputs": [{ "type": "address", "name": "", "internalType": "address" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+    "name": "lpTokens",
+    "inputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "minStakeAmount",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "partnerIdx",
+    "inputs": [{ "type": "address", "name": "", "internalType": "address" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+    "name": "partners",
+    "inputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "partnersLimit",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "removePartner",
+    "inputs": [
+      { "type": "address", "name": "_partner", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "renounceRole",
+    "inputs": [
+      { "type": "bytes32", "name": "_role", "internalType": "bytes32" },
+      { "type": "address", "name": "_account", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "revokeRole",
+    "inputs": [
+      { "type": "bytes32", "name": "_role", "internalType": "bytes32" },
+      { "type": "address", "name": "_account", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "rewardPool",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setBuffer",
+    "inputs": [
+      { "type": "address", "name": "_user", "internalType": "address" },
+      { "type": "uint256", "name": "_amount", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setClaimingTxLimit",
+    "inputs": [{ "type": "uint256", "name": "_val", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setEraShotsLimit",
+    "inputs": [
+      { "type": "uint256", "name": "_limit", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setMinStakeAmount",
+    "inputs": [
+      { "type": "uint256", "name": "_amount", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "setPartnersLimit",
+    "inputs": [
+      { "type": "uint256", "name": "_value", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "payable",
+    "outputs": [],
+    "name": "stake",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+    "name": "stakers",
+    "inputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "uint256", "name": "totalBalance", "internalType": "uint256" },
+      { "type": "uint256", "name": "eraStarted", "internalType": "uint256" }
+    ],
+    "name": "stakes",
+    "inputs": [{ "type": "address", "name": "", "internalType": "address" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "sum2unstake",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "bool", "name": "", "internalType": "bool" }],
+    "name": "supportsInterface",
+    "inputs": [
+      { "type": "bytes4", "name": "interfaceId", "internalType": "bytes4" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "sync",
+    "inputs": [{ "type": "uint256", "name": "_era", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "totalBalance",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "totalRevenue",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "totalUserRewards",
+    "inputs": [{ "type": "address", "name": "", "internalType": "address" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "unbondedPool",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "unstake",
+    "inputs": [
+      { "type": "uint256", "name": "_amount", "internalType": "uint256" },
+      { "type": "bool", "name": "_immediate", "internalType": "bool" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "unstakingPool",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "usersShotsPerEra",
+    "inputs": [
+      { "type": "address", "name": "", "internalType": "address" },
+      { "type": "uint256", "name": "", "internalType": "uint256" },
+      { "type": "uint256", "name": "", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "string", "name": "", "internalType": "string" }],
+    "name": "utilName",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "withdraw",
+    "inputs": [{ "type": "uint256", "name": "_id", "internalType": "uint256" }]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "uint256", "name": "", "internalType": "uint256" }],
+    "name": "withdrawBlock",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "withdrawRevenue",
+    "inputs": [
+      { "type": "uint256", "name": "_amount", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [
+      { "type": "uint256", "name": "val", "internalType": "uint256" },
+      { "type": "uint256", "name": "eraReq", "internalType": "uint256" },
+      { "type": "uint256", "name": "lag", "internalType": "uint256" }
+    ],
+    "name": "withdrawals",
+    "inputs": [
+      { "type": "address", "name": "", "internalType": "address" },
+      { "type": "uint256", "name": "", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "AddPartner",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "address", "name": "partner", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ClaimDappError",
+    "inputs": [
+      { "type": "uint256", "name": "amount", "indexed": true },
+      { "type": "uint256", "name": "era", "indexed": true },
+      { "type": "bytes", "name": "reason", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ClaimDappSuccess",
+    "inputs": [
+      { "type": "uint256", "name": "eraStakerReward", "indexed": false },
+      { "type": "uint256", "name": "_era", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ClaimStakerError",
+    "inputs": [
+      { "type": "uint256", "name": "era", "indexed": true },
+      { "type": "bytes", "name": "reason", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "ClaimStakerSuccess",
+    "inputs": [
+      { "type": "uint256", "name": "era", "indexed": true },
+      { "type": "uint256", "name": "lastClaimed", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Claimed",
+    "inputs": [
+      { "type": "address", "name": "user", "indexed": true },
+      { "type": "uint256", "name": "amount", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "FillRewardPool",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "value", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "FillUnbonded",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "value", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "FillUnstaking",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "value", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Initialized",
+    "inputs": [{ "type": "uint8", "name": "version", "indexed": false }],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "RemovePartner",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "address", "name": "partner", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "RoleAdminChanged",
+    "inputs": [
+      { "type": "bytes32", "name": "role", "indexed": true },
+      { "type": "bytes32", "name": "previousAdminRole", "indexed": true },
+      { "type": "bytes32", "name": "newAdminRole", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "RoleGranted",
+    "inputs": [
+      { "type": "bytes32", "name": "role", "indexed": true },
+      { "type": "address", "name": "account", "indexed": true },
+      { "type": "address", "name": "sender", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "RoleRevoked",
+    "inputs": [
+      { "type": "bytes32", "name": "role", "indexed": true },
+      { "type": "address", "name": "account", "indexed": true },
+      { "type": "address", "name": "sender", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "SetClaimingTxLimit",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "val", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "SetEraShotsLimit",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "limit", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "SetMinStakeAmount",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "amount", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "SetPartnersLimit",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "value", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Staked",
+    "inputs": [
+      { "type": "address", "name": "user", "indexed": true },
+      { "type": "uint256", "name": "val", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Synchronization",
+    "inputs": [
+      { "type": "address", "name": "sender", "indexed": true },
+      { "type": "uint256", "name": "era", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "UnbondAndUnstakeError",
+    "inputs": [
+      { "type": "uint256", "name": "sum2unstake", "indexed": true },
+      { "type": "uint256", "name": "era", "indexed": true },
+      { "type": "bytes", "name": "reason", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "UnbondAndUnstakeSuccess",
+    "inputs": [
+      { "type": "uint256", "name": "era", "indexed": true },
+      { "type": "uint256", "name": "sum2unstake", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Unstaked",
+    "inputs": [
+      { "type": "address", "name": "user", "indexed": true },
+      { "type": "uint256", "name": "amount", "indexed": false },
+      { "type": "bool", "name": "immediate", "indexed": false }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "UpdateError",
+    "inputs": [{ "type": "string", "name": "reason", "indexed": true }],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "WithdrawRevenue",
+    "inputs": [{ "type": "uint256", "name": "amount", "indexed": false }],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "WithdrawUnbondedError",
+    "inputs": [
+      { "type": "uint256", "name": "_era", "indexed": true },
+      { "type": "bytes", "name": "reason", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "WithdrawUnbondedSuccess",
+    "inputs": [{ "type": "uint256", "name": "_era", "indexed": true }],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Withdrawn",
+    "inputs": [
+      { "type": "address", "name": "user", "indexed": true },
+      { "type": "uint256", "name": "val", "indexed": false }
+    ],
+    "anonymous": false
+  }
+]
