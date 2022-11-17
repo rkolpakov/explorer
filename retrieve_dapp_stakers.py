@@ -46,7 +46,7 @@ def main():
     filter_list = create_filters(
         address=contract_address,
         topics=[Web3.keccak(text="AstarBaseRegistered(address)").hex()],
-        fromBlock=2312000,
+        fromBlock=contract_creation_block,
         toBlock=latest_block,
     )
 
