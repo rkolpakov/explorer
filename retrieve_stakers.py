@@ -12,7 +12,7 @@ web3 = Web3(
     Web3.HTTPProvider(
         "https://astar-mainnet.g.alchemy.com/v2/cBLjNhHbZW28m7ux7aKtcQCb6-QK7Cgr",
         request_kwargs={"timeout": 600},
-    )
+    ) 
 )
 
 
